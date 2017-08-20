@@ -1,0 +1,8 @@
+<div *ngIf="showlist">
+<h2>Songs Category</h2> 
+
+<ul>
+    <li *ngFor="let category of songsCategoryList"><a (click)="getSongsListByCategory(category)"> {{category}}</a></li>
+</ul>
+</div>
+<songs-view-component [showview]="showlist" (toggleview) = "showListAgain($event)" [songslist]="songslistbycategory"></songs-view-component>

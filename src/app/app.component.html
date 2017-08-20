@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 header"><img src="../images/logo2.png" width="auto" height="80"/></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 menu">
+            <a [routerLink] = "['wallpapers']">Wallpapers</a>
+            <a [routerLink] = "['songs']">Songs</a>
+            <a href="#">Movies</a>
+            <a href="#">Study Material</a>
+            <a href="#">Blogs</a>
+            <a href="#">Videos</a>
+            <a href="#">Console</a>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 content"><router-outlet></router-outlet></div>
+    </div>
+    <div class="row">
+        <div class="col-12 footer">Copyrights@2017</div>
+    </div>
+</div>

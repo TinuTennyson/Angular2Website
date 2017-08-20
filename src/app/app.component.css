@@ -1,0 +1,49 @@
+.header {
+    border: 1px solid lawngreen;
+    background: #00bfff;
+    height:80px;
+    padding:0;
+}
+
+.footer {
+    border: 1px solid lawngreen;
+    background: slategrey;
+    height:70px;
+    text-align:center;
+    padding-top:25px;
+}
+
+.menu {
+    height:500px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:0;
+}
+
+.menu a {
+    display: block;
+    height:40px;
+    background:orangered;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin:0px;
+    padding: 10px;
+    color:floralwhite;
+
+}
+
+.menu a:hover {
+    display: block;
+    height:40px;
+    background:orange;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin:0px;
+
+}
+
+.content {
+    min-height:500px;
+    border: 1px solid black;
+}

@@ -1,0 +1,10 @@
+<div *ngIf="!showview">
+    <div *ngFor="let song of songslist" class="songs-view">
+        <div>Song Name: {{song.name}}</div>
+        <audio controls>
+            <source [src]="song.location" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <a (click)="goBack()">Back to List</a>
+</div>

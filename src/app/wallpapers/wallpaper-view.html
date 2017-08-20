@@ -1,0 +1,3 @@
+<div class="wallpaper-tile" *ngFor="let wallpaper of wallpapersListByCategory" (click)="showFullSized(wallpaper)">
+    <img [src]="wallpaper.location" focus-tile  width="160" height="120"/>
+</div>

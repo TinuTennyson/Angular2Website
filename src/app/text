@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<script>
+function getCoordFromDegrees(angle, radius, svgSize) {
+    const x = Math.cos(angle * Math.PI / 180);
+    const y = Math.sin(angle * Math.PI / 180);
+    const coordX = x * radius + svgSize / 2;
+    const coordY = y * -radius + svgSize / 2;
+    return [coordX, coordY];
+}
+
+console.log(getCoordFromDegrees(15, 130, 300));
+
+</script>
+<style>
+	text {
+    	transform-origin: center !important;
+    }
+</style>
+<body>
+
+<svg viewBox="0 0 300 300">
+  <path stroke="white" stroke-width="2" fill="green" id="green"
+             d="M 280 150
+               A 130 130 0 0 0 275.57035741757886 116.3535241366723
+               L 150 150"/>
+  <text transform="rotate(7.5)"><textPath href="#green" startOffset="50%" text-anchor="middle" dominant-baseline="middle">green</textPath></text>
+  
+  <path stroke="white" stroke-width="2" fill="lightgreen" id="lightgreen"
+             d="M 300 150
+               A 150 150 0 0 0 294.88887394336024, 111.1771432346219
+               L 275.57035741757886 116.3535241366723 A 130 130 0 0 1 280 150"/>
+  <text transform="rotate(7.5)"><textPath href="#lihtgreen" startOffset="50%" text-anchor="middle" dominant-baseline="middle">lightgreen</textPath></text>
+  
+  
+  <path stroke="white" stroke-width="2" fill="tomato" id="tomato"
+             d="M 275.57035741757886 116.3535241366723
+               A 130 130 0 0 0 262.58330249197707 85.00000000000001
+               L 150 150"/>
+<text transform="rotate(7.5)"><textPath href="#tomato" startOffset="50%" text-anchor="middle" dominant-baseline="middle">tomato</textPath></text>
+
+  <path stroke="white" stroke-width="2" fill="orange" id="orangered"
+             d="M 294.88887394336024, 111.1771432346219
+               A 150 150 0 0 0 279.9038105676658 75.00000000000001
+               L 262.58330249197707 85.00000000000001 A 130 130 0 0 1 275.57035741757886 116.3535241366723"/>
+<text transform="rotate(7.5)"><textPath href="#oranered" startOffset="50%" text-anchor="middle" dominant-baseline="middle">orangered</textPath></text>
+
+   <path stroke="white" stroke-width="2" fill="#00bfff" id="blue"
+             d="M 262.58330249197707 85.00000000000001
+               A 150 150 0 0 0 241.92388155425118, 58.07611844574883
+               L 150 150"/>               
+  <text transform="rotate(7.5)"><textPath href="#blue" startOffset="50%" text-anchor="middle" dominant-baseline="middle">blue</textPath></text>
+  
+  <path stroke="white" stroke-width="2" fill="yellow" id="yellow"
+             d="M 241.92388155425118, 58.07611844574883
+               A 150 150 0 0 0 215, 37.41669750802298
+               L 150 150"/>               
+  <text transform="rotate(7.5)"><textPath href="#yellow" startOffset="50%" text-anchor="middle" dominant-baseline="middle">yellow</textPath></text>
+</svg>
+
+</body>
+</html>
